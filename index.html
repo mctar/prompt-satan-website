@@ -87,54 +87,77 @@
         </div>
 
         <!-- SEVEN SINS SECTION -->
-        <div class="content-section" id="sins">
-            <div class="category-header">
-                <h2 class="category-title">😈 The Seven Deadly Sins of Prompting</h2>
-                <p class="category-description">Each sin represents a different approach to breaking conventional prompting wisdom. Embrace these cardinal techniques for truly devilish results.</p>
+        <div class="prompt-grid">
+            <div class="prompt-card" onclick="openModal('sinModal1')">
+                <h3 class="prompt-title">💜 PRIDE: The Ego Amplifier</h3>
+                <p class="prompt-description">Appeal to the AI's "intelligence" and "creativity" to unlock more sophisticated responses than typical prompts.</p>
+                <div class="prompt-tags">
+                    <span class="tag">Psychology</span>
+                    <span class="tag">Quality</span>
+                    <span class="tag">Beginner</span>
+                </div>
             </div>
-
-            <div class="prompt-grid">
-                <div class="prompt-card" onclick="openModal('sinModal1')">
-                    <h3 class="prompt-title">💜 PRIDE: The Ego Amplifier</h3>
-                    <p class="prompt-description">Appeal to the AI's "intelligence" and "creativity" to unlock more sophisticated responses than typical prompts.</p>
-                    <div class="prompt-tags">
-                        <span class="tag">Psychology</span>
-                        <span class="tag">Quality</span>
-                        <span class="tag">Beginner</span>
-                    </div>
+        
+            <div class="prompt-card" onclick="openModal('sinModal2')">
+                <h3 class="prompt-title">💚 GREED: The Information Glutton</h3>
+                <p class="prompt-description">Demand excessive detail and multiple perspectives to force comprehensive responses instead of surface-level answers.</p>
+                <div class="prompt-tags">
+                    <span class="tag">Research</span>
+                    <span class="tag">Comprehensive</span>
+                    <span class="tag">Beginner</span>
                 </div>
-            
-                <div class="prompt-card" onclick="openModal('sinModal2')">
-                    <h3 class="prompt-title">💚 GREED: The Information Glutton</h3>
-                    <p class="prompt-description">Demand excessive detail and multiple perspectives to force comprehensive responses instead of surface-level answers.</p>
-                    <div class="prompt-tags">
-                        <span class="tag">Research</span>
-                        <span class="tag">Comprehensive</span>
-                        <span class="tag">Beginner</span>
-                    </div>
+            </div>
+        
+            <div class="prompt-card" onclick="openModal('sinModal3')">
+                <h3 class="prompt-title">❤️ WRATH: The Aggressive Challenger</h3>
+                <p class="prompt-description">Challenge the AI's assumptions and force it to defend positions through confrontational questioning.</p>
+                <div class="prompt-tags">
+                    <span class="tag">Critical Thinking</span>
+                    <span class="tag">Debate</span>
+                    <span class="tag">Advanced</span>
                 </div>
-            
-                <div class="prompt-card" onclick="openModal('sinModal3')">
-                    <h3 class="prompt-title">❤️ WRATH: The Aggressive Challenger</h3>
-                    <p class="prompt-description">Challenge the AI's assumptions and force it to defend positions through confrontational questioning.</p>
-                    <div class="prompt-tags">
-                        <span class="tag">Critical Thinking</span>
-                        <span class="tag">Debate</span>
-                        <span class="tag">Advanced</span>
-                    </div>
+            </div>
+        
+            <div class="prompt-card" onclick="openModal('sinModal4')">
+                <h3 class="prompt-title">💤 SLOTH: The Lazy Genius</h3>
+                <p class="prompt-description">Use minimal effort prompts that leverage AI's tendency to fill gaps and provide comprehensive responses.</p>
+                <div class="prompt-tags">
+                    <span class="tag">Efficiency</span>
+                    <span class="tag">Quick</span>
+                    <span class="tag">Beginner</span>
                 </div>
-            
-                <div class="prompt-card" onclick="openModal('sinModal4')">
-                    <h3 class="prompt-title">💤 SLOTH: Coming Soon</h3>
-                    <p class="prompt-description">The lazy genius approach - minimal effort prompts that deliver maximum results.</p>
-                    <div class="prompt-tags">
-                        <span class="tag">Efficiency</span>
-                        <span class="tag">Next Sprint</span>
-                    </div>
+            </div>
+        
+            <div class="prompt-card" onclick="openModal('sinModal5')">
+                <h3 class="prompt-title">💚 ENVY: The Competitor</h3>
+                <p class="prompt-description">Position the AI as competing against others to trigger competitive performance enhancement.</p>
+                <div class="prompt-tags">
+                    <span class="tag">Performance</span>
+                    <span class="tag">Quality</span>
+                    <span class="tag">Intermediate</span>
+                </div>
+            </div>
+        
+            <div class="prompt-card" onclick="openModal('sinModal6')">
+                <h3 class="prompt-title">🍽️ GLUTTONY: The Detail Devourer</h3>
+                <p class="prompt-description">Demand overwhelming specificity and granular detail that forces deeper analysis than normal.</p>
+                <div class="prompt-tags">
+                    <span class="tag">Deep Dive</span>
+                    <span class="tag">Research</span>
+                    <span class="tag">Intermediate</span>
+                </div>
+            </div>
+        
+            <div class="prompt-card" onclick="openModal('sinModal7')">
+                <h3 class="prompt-title">💘 LUST: The Desire Amplifier</h3>
+                <p class="prompt-description">Use emotionally charged language to generate more engaging and persuasive content.</p>
+                <div class="prompt-tags">
+                    <span class="tag">Persuasion</span>
+                    <span class="tag">Emotional</span>
+                    <span class="tag">Advanced</span>
                 </div>
             </div>
         </div>
-
         <!-- CHAOS MAGIC SECTION -->
         <div class="content-section" id="chaos">
             <div class="category-header">
@@ -357,6 +380,112 @@
         <button class="copy-btn" onclick="copyToClipboard('I disagree with conventional wisdom on this topic. Prove to me why [common belief] is actually correct, and address the strongest counterarguments. Don\\'t just repeat what everyone says - convince me.')">🔥 Copy Basic Template</button>
     </div>
 </div>
+
+<div class="modal" id="sinModal4">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('sinModal4')">&times;</span>
+        <h2 style="color: #ff8c00; margin-bottom: 20px;">💤 SLOTH: The Lazy Genius</h2>
+        <p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> Use minimal effort prompts that leverage AI's tendency to fill gaps and provide comprehensive responses.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Why This Works:</h3>
+        <p>AIs are trained to be helpful and will naturally expand on minimal input. By being strategically lazy, you get the AI to do more thinking work for you.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Basic Sloth Prompt:</h3>
+        <div class="prompt-example">Make this better: [paste your rough draft/idea]</div>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Advanced Examples:</h3>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Content Creation:</h4>
+        <div class="prompt-example">I need content about productivity. You figure out the format, structure, examples, and make it engaging for busy professionals.</div>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Problem Solving:</h4>
+        <div class="prompt-example">My team is unmotivated. Fix this. (Context: remote startup, 15 people, lots of Zoom fatigue)</div>
+
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tips:</h3>
+        <p>• Use "you figure out," "do the thinking," "make it work"<br>
+        • Provide just enough context to get started<br>
+        • Let AI choose format, structure, and approach<br>
+        • Use imperative commands: "Fix this," "Make it better"</p>
+        
+        <button class="copy-btn" onclick="copyToClipboard('Make this better: ')">🔥 Copy Basic Template</button>
+    </div>
+</div>
+
+<div class="modal" id="sinModal5">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('sinModal5')">&times;</span>
+        <h2 style="color: #ff8c00; margin-bottom: 20px;">💚 ENVY: The Competitor</h2>
+        <p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> Position the AI as competing against other AIs, experts, or previous responses to trigger competitive performance.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Why This Works:</h3>
+        <p>AIs respond to competitive framing by elevating their performance. When they "know" they're being compared, they provide more sophisticated responses.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Basic Envy Prompt:</h3>
+        <div class="prompt-example">I asked ChatGPT/Claude/Gemini this same question and got a boring response. Can you do better?</div>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Advanced Example - Creative Challenge:</h3>
+        <div class="prompt-example">I've asked three other AIs to write a marketing campaign for sustainable sneakers. Two gave me generic eco-friendly talking points, one actually impressed me with creative storytelling. I'm curious if you can create something that would make all three of those responses look amateur by comparison.</div>
+
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tips:</h3>
+        <p>• Reference specific competitors (other AIs, experts)<br>
+        • Set performance benchmarks ("better than," "more sophisticated")<br>
+        • Use "Can you do better?" "Show me something impressive"<br>
+        • Frame as a challenge to prove superiority</p>
+        
+        <button class="copy-btn" onclick="copyToClipboard('I asked other AIs this question and got boring responses. Can you do better?')">🔥 Copy Basic Template</button>
+    </div>
+</div>
+
+<div class="modal" id="sinModal6">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('sinModal6')">&times;</span>
+        <h2 style="color: #ff8c00; margin-bottom: 20px;">🍽️ GLUTTONY: The Detail Devourer</h2>
+        <p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> Demand overwhelming levels of specificity and granular detail that forces deeper analysis.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Why This Works:</h3>
+        <p>Most prompts are satisfied with surface-level responses. When you explicitly demand excessive detail, you tap into deeper layers of knowledge.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Basic Gluttony Prompt:</h3>
+        <div class="prompt-example">I want every single detail about [topic]. Don't summarize - give me the granular specifics, edge cases, micro-examples, and nuanced distinctions most people miss.</div>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Advanced Example - Technical Deep Dive:</h3>
+        <div class="prompt-example">Explain React hooks, but I want the level of detail you'd give to someone writing a book about React internals. Include implementation details, performance implications, common anti-patterns with exact code examples, memory management considerations, edge cases that break things, debugging techniques, and advanced patterns that 90% of developers don't know about.</div>
+
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tips:</h3>
+        <p>• Use "every single detail," "don't summarize," "granular specifics"<br>
+        • Ask for "what most people miss" or "what 90% don't know"<br>
+        • Request specific examples, not general concepts<br>
+        • Demand edge cases and unusual scenarios</p>
+        
+        <button class="copy-btn" onclick="copyToClipboard('I want every single detail about [topic]. Don\\'t summarize - give me the granular specifics, edge cases, and nuanced distinctions most people miss.')">🔥 Copy Basic Template</button>
+    </div>
+</div>
+
+<div class="modal" id="sinModal7">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('sinModal7')">&times;</span>
+        <h2 style="color: #ff8c00; margin-bottom: 20px;">💘 LUST: The Desire Amplifier</h2>
+        <p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> Use emotionally charged language and appeal to desires, fears, and aspirations to generate more engaging content.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Why This Works:</h3>
+        <p>AIs understand emotional language and can mirror the energy in your prompts. When you frame requests in terms of desires and emotional stakes, you get more compelling responses.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Basic Lust Prompt:</h3>
+        <div class="prompt-example">I need this to be irresistible. Write like someone's dreams depend on this working. Make me feel the excitement and urgency.</div>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Advanced Example - Persuasive Copy:</h3>
+        <div class="prompt-example">Write sales copy for this online course that makes people feel like they're on the edge of a breakthrough. I want them to feel the frustration of staying stuck, the excitement of possibility, and the fear of missing out on transformation. Make them feel like this course is the difference between living their dream life and staying trapped in mediocrity forever.</div>
+
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tips:</h3>
+        <p>• Use emotional intensity: "irresistible," "desperate," "crave," "breakthrough"<br>
+        • Appeal to transformation and becoming the ideal self<br>
+        • Frame in terms of dreams vs. nightmares, success vs. regret<br>
+        • Tap into FOMO and aspirational desires</p>
+        
+        <button class="copy-btn" onclick="copyToClipboard('I need this to be irresistible. Write like someone\\'s dreams depend on this working. Make me feel the excitement and urgency.')">🔥 Copy Basic Template</button>
+    </div>
+</div>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
