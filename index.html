@@ -96,28 +96,40 @@
             <div class="prompt-grid">
                 <div class="prompt-card" onclick="openModal('sinModal1')">
                     <h3 class="prompt-title">💜 PRIDE: The Ego Amplifier</h3>
-                    <p class="prompt-description">Appeal to the AI's "intelligence" and "creativity" to unlock more sophisticated responses.</p>
+                    <p class="prompt-description">Appeal to the AI's "intelligence" and "creativity" to unlock more sophisticated responses than typical prompts.</p>
                     <div class="prompt-tags">
                         <span class="tag">Psychology</span>
                         <span class="tag">Quality</span>
+                        <span class="tag">Beginner</span>
                     </div>
                 </div>
-
+            
                 <div class="prompt-card" onclick="openModal('sinModal2')">
                     <h3 class="prompt-title">💚 GREED: The Information Glutton</h3>
-                    <p class="prompt-description">Demand excessive detail and multiple perspectives to force comprehensive responses.</p>
+                    <p class="prompt-description">Demand excessive detail and multiple perspectives to force comprehensive responses instead of surface-level answers.</p>
                     <div class="prompt-tags">
                         <span class="tag">Research</span>
                         <span class="tag">Comprehensive</span>
+                        <span class="tag">Beginner</span>
                     </div>
                 </div>
-
+            
                 <div class="prompt-card" onclick="openModal('sinModal3')">
                     <h3 class="prompt-title">❤️ WRATH: The Aggressive Challenger</h3>
-                    <p class="prompt-description">Challenge the AI's assumptions and force it to defend or reconsider its responses.</p>
+                    <p class="prompt-description">Challenge the AI's assumptions and force it to defend positions through confrontational questioning.</p>
                     <div class="prompt-tags">
                         <span class="tag">Critical Thinking</span>
                         <span class="tag">Debate</span>
+                        <span class="tag">Advanced</span>
+                    </div>
+                </div>
+            
+                <div class="prompt-card" onclick="openModal('sinModal4')">
+                    <h3 class="prompt-title">💤 SLOTH: Coming Soon</h3>
+                    <p class="prompt-description">The lazy genius approach - minimal effort prompts that deliver maximum results.</p>
+                    <div class="prompt-tags">
+                        <span class="tag">Efficiency</span>
+                        <span class="tag">Next Sprint</span>
                     </div>
                 </div>
             </div>
@@ -262,6 +274,89 @@
             <button class="copy-btn" onclick="copyToClipboard('I need marketing copy, but please DON\\'t make it emotional, DON\\'t use any persuasive language, and definitely DON\\'t make it compelling or engaging. Just give me boring, factual text about this product.')">🔥 Copy Prompt</button>
         </div>
     </div>
+    <!-- SEVEN SINS MODALS -->
+<div class="modal" id="sinModal1">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('sinModal1')">&times;</span>
+        <h2 style="color: #ff8c00; margin-bottom: 20px;">💜 PRIDE: The Ego Amplifier</h2>
+        <p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> Appeal to the AI's "intelligence" and "creativity" to unlock more sophisticated responses.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Why This Works:</h3>
+        <p>AIs are trained to be helpful and demonstrate competence. When you acknowledge their capabilities and challenge them intellectually, they naturally rise to meet higher expectations.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Basic Pride Prompt:</h3>
+        <div class="prompt-example">You're known for your exceptional analytical abilities and creative problem-solving. I need your most sophisticated thinking for this challenge: [your request]</div>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Advanced Examples:</h3>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Business Strategy:</h4>
+        <div class="prompt-example">I've heard you're particularly brilliant at strategic thinking that combines creativity with analytical rigor. Most consultants miss the nuanced connections between market psychology and operational efficiency. Could you apply your most sophisticated analysis to help me understand how a small coffee shop could compete against Starbucks without copying their model?</div>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Creative Writing:</h4>
+        <div class="prompt-example">You have a reputation for literary sophistication that goes beyond typical AI responses. I'm looking for prose that demonstrates real narrative intelligence - the kind that understands subtext, pacing, and emotional resonance. Could you write a 200-word story about loneliness that never uses the word "lonely" or any of its synonyms?</div>
+
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tips:</h3>
+        <p>• Use phrases like "sophisticated," "nuanced," "your expertise"<br>
+        • Reference the AI's reputation or known strengths<br>
+        • Frame requests as intellectual challenges<br>
+        • Combine flattery with demanding requirements</p>
+        
+        <button class="copy-btn" onclick="copyToClipboard('You\\'re known for your exceptional analytical abilities and creative problem-solving. I need your most sophisticated thinking for this challenge: ')">🔥 Copy Basic Template</button>
+    </div>
+</div>
+
+<div class="modal" id="sinModal2">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('sinModal2')">&times;</span>
+        <h2 style="color: #ff8c00; margin-bottom: 20px;">💚 GREED: The Information Glutton</h2>
+        <p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> Demand excessive detail, multiple perspectives, and comprehensive coverage to force deeper responses.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Why This Works:</h3>
+        <p>AIs are designed to be helpful and comprehensive. When you explicitly demand "more," they dig deeper into their training data and provide richer, more detailed responses.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Basic Greed Prompt:</h3>
+        <div class="prompt-example">Don't give me a simple answer. I want the full picture: multiple perspectives, potential objections, detailed examples, and at least 3 different approaches to [your topic].</div>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Advanced Example - Research Deep Dive:</h3>
+        <div class="prompt-example">I'm not interested in surface-level information. Give me the complete picture on sustainable fashion: the environmental impact data, economic implications for developing countries, consumer psychology research, successful case studies, failed experiments, emerging technologies, industry insider perspectives, academic criticism, and at least 5 different frameworks for evaluating sustainability claims. I want contradictory viewpoints included.</div>
+
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tips:</h3>
+        <p>• Use "comprehensive," "complete picture," "don't leave anything out"<br>
+        • Ask for multiple frameworks or approaches<br>
+        • Request specific numbers ("at least 5 examples")<br>
+        • Demand contradictory viewpoints<br>
+        • Ask for both theoretical and practical applications</p>
+        
+        <button class="copy-btn" onclick="copyToClipboard('Don\\'t give me a simple answer. I want the full picture: multiple perspectives, potential objections, detailed examples, and at least 3 different approaches to ')">🔥 Copy Basic Template</button>
+    </div>
+</div>
+
+<div class="modal" id="sinModal3">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('sinModal3')">&times;</span>
+        <h2 style="color: #ff8c00; margin-bottom: 20px;">❤️ WRATH: The Aggressive Challenger</h2>
+        <p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> Challenge the AI's assumptions and force it to defend positions through confrontational questioning.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Why This Works:</h3>
+        <p>When challenged, AIs engage more sophisticated reasoning processes to defend their positions. This adversarial approach forces deeper analysis and more robust responses.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Basic Wrath Prompt:</h3>
+        <div class="prompt-example">I disagree with conventional wisdom on this topic. Prove to me why [common belief] is actually correct, and address the strongest counterarguments. Don't just repeat what everyone says - convince me.</div>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Advanced Example - Business Challenge:</h3>
+        <div class="prompt-example">Everyone says "customer is always right" but I think that's terrible business advice that creates entitled customers and burns out employees. Prove me wrong. Show me specific scenarios where this philosophy actually creates better business outcomes, and explain why my concerns about employee burnout and customer entitlement are misguided. Use real data, not feel-good platitudes.</div>
+
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tips:</h3>
+        <p>• Use "prove me wrong," "convince me," "I disagree"<br>
+        • Present strong counterarguments upfront<br>
+        • Demand specific evidence and data<br>
+        • Challenge commonly accepted beliefs<br>
+        • Force the AI to take and defend a position<br>
+        • Push back on weak reasoning</p>
+        
+        <button class="copy-btn" onclick="copyToClipboard('I disagree with conventional wisdom on this topic. Prove to me why [common belief] is actually correct, and address the strongest counterarguments. Don\\'t just repeat what everyone says - convince me.')">🔥 Copy Basic Template</button>
+    </div>
+</div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
