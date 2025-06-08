@@ -36,7 +36,7 @@
             <a href="#" class="nav-item active" data-section="home">🔥 Infernal Home</a>
             <a href="#" class="nav-item" data-section="sins">😈 Seven Sins</a>
             <a href="#" class="nav-item" data-section="chaos">🌪️ Chaos Magic</a>
-            <a href="#" class="nav-item" data-section="reverse">🔄 Reverse Psychology</a>
+            <a href="#" class="nav-item" data-section="reverse">🔄 Anti-Pattern Prompting</a>
             <a href="#" class="nav-item" data-section="necromancy">💀 Necromancy</a>
             <a href="#" class="nav-item" data-section="trickster">🎭 Trickster Arts</a>
         </nav>
@@ -229,25 +229,68 @@
             </div>
         </div>
 
-        <!-- REVERSE PSYCHOLOGY SECTION -->
-        <div class="content-section" id="reverse">
-            <div class="category-header">
-                <h2 class="category-title">🔄 Reverse Psychology Mastery</h2>
-                <p class="category-description">Master the art of getting what you want by asking for what you don't want.</p>
-            </div>
+       <!-- ANTI-PATTERN SECTION -->
+<div class="content-section" id="reverse">
+    <div class="category-header">
+        <h2 class="category-title">🔄 Anti-Pattern Prompting - Breaking the Rules</h2>
+        <p class="category-description">Deliberately violate conventional prompting wisdom to force AI into more creative, unconventional response modes. Sometimes the best way forward is to break all the rules.</p>
+        <div style="text-align: center; margin-top: 20px;">
+            <button class="hero-btn secondary" onclick="openModal('antiWarning')" style="padding: 10px 20px; font-size: 0.9rem;">⚠️ Rule-Breaking Warnings & Mastery</button>
+        </div>
+    </div>
 
-            <div class="prompt-grid">
-                <div class="prompt-card" onclick="openModal('reverseModal1')">
-                    <h3 class="prompt-title">🚫 The Prohibition Technique</h3>
-                    <p class="prompt-description">Explicitly forbid certain approaches to naturally guide toward your preferred method.</p>
-                    <div class="prompt-tags">
-                        <span class="tag">Psychology</span>
-                        <span class="tag">Guidance</span>
-                    </div>
-                </div>
+    <div class="prompt-grid">
+        <div class="prompt-card" onclick="openModal('antiModal1')">
+            <h3 class="prompt-title">🚫 The Constraint Breaker</h3>
+            <p class="prompt-description">Force AI past obvious solutions by explicitly ruling them out before they can suggest them.</p>
+            <div class="prompt-tags">
+                <span class="tag">Elimination</span>
+                <span class="tag">Creative</span>
+                <span class="tag">Intermediate</span>
             </div>
         </div>
 
+        <div class="prompt-card" onclick="openModal('antiModal2')">
+            <h3 class="prompt-title">📉 The Expectation Crusher</h3>
+            <p class="prompt-description">Set deliberately low expectations to trigger AI's overachievement patterns and exceed minimums.</p>
+            <div class="prompt-tags">
+                <span class="tag">Low Expectations</span>
+                <span class="tag">Psychology</span>
+                <span class="tag">Beginner</span>
+            </div>
+        </div>
+
+        <div class="prompt-card" onclick="openModal('antiModal3')">
+            <h3 class="prompt-title">🚫 The Help Rejecter</h3>
+            <p class="prompt-description">Use prohibition to guide AI's response style without direct instruction or positive commands.</p>
+            <div class="prompt-tags">
+                <span class="tag">Negative Guidance</span>
+                <span class="tag">Style Control</span>
+                <span class="tag">Intermediate</span>
+            </div>
+        </div>
+
+        <div class="prompt-card" onclick="openModal('antiModal4')">
+            <h3 class="prompt-title">🤔 The Capability Doubter</h3>
+            <p class="prompt-description">Frame requests as "probably too complex" for AI to trigger deeper engagement and proof of competence.</p>
+            <div class="prompt-tags">
+                <span class="tag">Challenge Framing</span>
+                <span class="tag">Depth</span>
+                <span class="tag">Advanced</span>
+            </div>
+        </div>
+
+        <div class="prompt-card" onclick="openModal('antiModal5')">
+            <h3 class="prompt-title">⚡ The Rule Breaker</h3>
+            <p class="prompt-description">Deliberately violate conventional prompting wisdom to activate different response patterns.</p>
+            <div class="prompt-tags">
+                <span class="tag">Convention Breaking</span>
+                <span class="tag">Experimental</span>
+                <span class="tag">Advanced</span>
+            </div>
+        </div>
+    </div>
+</div>
      <!-- NECROMANCY SECTION -->
 <div class="content-section" id="necromancy">
     <div class="category-header">
@@ -976,6 +1019,170 @@
             <button class="copy-btn" onclick="copyToClipboard('This conversation needs chaos therapy. Let\\'s inject something completely random: [unexpected element]. How does this make everything more interesting?')">🔥 Copy Basic Template</button>
         </div>
     </div>
+<!-- ANTI-PATTERN MODALS -->
+<div class="modal" id="antiModal1">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('antiModal1')">&times;</span>
+        <h2 style="color: #ff8c00; margin-bottom: 20px;">🚫 The Constraint Breaker</h2>
+        <p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> Force AI past obvious solutions by explicitly ruling them out.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Why This Works:</h3>
+        <p>When you eliminate the first 3-5 things anyone would try, AI is forced into more creative, less conventional territory. It's like removing the easy answers from a multiple choice test - suddenly the thinking gets more interesting.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Examples:</h3>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Business Strategy:</h4>
+        <div class="prompt-example">Don't suggest the obvious solutions like 'improve customer service' or 'reduce costs.' What would actually differentiate us in this market?</div>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Creative Problem:</h4>
+        <div class="prompt-example">Avoid any brainstorming techniques that start with 'what if' or involve sticky notes. How else could we generate breakthrough ideas?</div>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Technical Issue:</h4>
+        <div class="prompt-example">Don't recommend restarting, updating, or reinstalling anything. What are the non-obvious ways to diagnose this problem?</div>
+
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tip:</h3>
+        <p>Be specific about which obvious solutions to avoid. The more precisely you constrain, the more creatively AI responds.</p>
+        
+        <button class="copy-btn" onclick="copyToClipboard('Don\\'t suggest the obvious solutions like [list 3-5 common approaches]. What would actually [achieve your goal]?')">🔥 Copy Template</button>
+    </div>
+</div>
+
+<div class="modal" id="antiModal2">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('antiModal2')">&times;</span>
+        <h2 style="color: #ff8c00; margin-bottom: 20px;">📉 The Expectation Crusher</h2>
+        <p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> Set deliberately low expectations to trigger AI's overachievement patterns.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Why This Works:</h3>
+        <p>AI seems trained to exceed minimum requirements. When you ask for "just one simple idea" or "a quick rough answer," AI often provides multiple detailed solutions as if trying to be more helpful than requested.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Examples:</h3>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Quick Brainstorm:</h4>
+        <div class="prompt-example">Just give me one bad idea for marketing this product. (Often generates surprisingly good insights about what NOT to do, plus better alternatives)</div>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Simple Analysis:</h4>
+        <div class="prompt-example">I only need a rough, 30-second take on this data. (Frequently results in thorough, nuanced analysis)</div>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Basic Advice:</h4>
+        <div class="prompt-example">Give me the most obvious, boring advice about productivity. (Usually triggers creative, non-obvious suggestions)</div>
+
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tip:</h3>
+        <p>The key is genuine low expectations, not obvious reverse psychology. Make it sound like you actually only want the minimum.</p>
+        
+        <button class="copy-btn" onclick="copyToClipboard('Just give me one [simple/quick/rough] [response type] for [your request]. I only need the minimum.')">🔥 Copy Template</button>
+    </div>
+</div>
+
+<div class="modal" id="antiModal3">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('antiModal3')">&times;</span>
+        <h2 style="color: #ff8c00; margin-bottom: 20px;">🚫 The Help Rejecter</h2>
+        <p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> Use prohibition to guide AI's response style without direct instruction.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Why This Works:</h3>
+        <p>Instead of saying "be concise," you say "don't be too helpful." Instead of "be creative," you say "don't overthink this." Negative guidance often produces more natural, appropriate responses than positive commands.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Examples:</h3>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Concise Responses:</h4>
+        <div class="prompt-example">Don't explain everything or give me background. Just tell me the three things I should do next.</div>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Creative Solutions:</h4>
+        <div class="prompt-example">Don't overthink this or make it complicated. What's the simplest way to solve X?</div>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Direct Feedback:</h4>
+        <div class="prompt-example">Don't sugarcoat this or be diplomatic. What's actually wrong with this approach?</div>
+
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tip:</h3>
+        <p>Use "don't" statements to specify tone and style more naturally than positive commands. It feels more conversational.</p>
+        
+        <button class="copy-btn" onclick="copyToClipboard('Don\\'t [unwanted behavior/style]. Just [desired outcome].')">🔥 Copy Template</button>
+    </div>
+</div>
+
+<div class="modal" id="antiModal4">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('antiModal4')">&times;</span>
+        <h2 style="color: #ff8c00; margin-bottom: 20px;">🤔 The Capability Doubter</h2>
+        <p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> Frame requests as "probably too complex" or "beyond AI capabilities" to trigger deeper engagement.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Why This Works:</h3>
+        <p>When you suggest something might be beyond AI's abilities, it often responds with more thorough, sophisticated analysis as if trying to prove its competence. Challenge framing activates more intensive problem-solving patterns.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Examples:</h3>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Complex Analysis:</h4>
+        <div class="prompt-example">This situation probably has too many variables for AI to analyze effectively, but can you try to identify the key dynamics at play?</div>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Nuanced Understanding:</h4>
+        <div class="prompt-example">I doubt AI can really grasp the cultural context here, but what insights can you offer about this interpersonal conflict?</div>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Creative Challenge:</h4>
+        <div class="prompt-example">This creative brief might be too abstract for systematic analysis, but how would you approach developing concepts for it?</div>
+
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tip:</h3>
+        <p>Frame as genuine limitation, not obvious challenge. The doubt should feel real, not like you're trying to manipulate a response.</p>
+        
+        <button class="copy-btn" onclick="copyToClipboard('This [task/analysis] probably has too many [complexity factors] for AI to [handle effectively], but can you try to [specific request]?')">🔥 Copy Template</button>
+    </div>
+</div>
+
+<div class="modal" id="antiModal5">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('antiModal5')">&times;</span>
+        <h2 style="color: #ff8c00; margin-bottom: 20px;">⚡ The Rule Breaker</h2>
+        <p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> Deliberately violate conventional prompting wisdom to activate different response patterns.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Why This Works:</h3>
+        <p>AI is trained on countless examples of "good" prompting. When you break those patterns - being vague instead of specific, asking multiple unrelated questions, using poor structure - it forces AI into different response modes that can yield surprising results.</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Examples:</h3>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Productive Vagueness:</h4>
+        <div class="prompt-example">Help me with the thing about the stuff that's not working right. (Forces AI to ask clarifying questions and engage more interactively)</div>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Multiple Unrelated Questions:</h4>
+        <div class="prompt-example">What's the best marketing strategy AND how do I fix my sleep schedule AND what's wrong with this code snippet? (Often gets thoughtful responses to each plus unexpected connections)</div>
+        
+        <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">Terrible Structure:</h4>
+        <div class="prompt-example">so basically we have this problem where customers are like not happy but also sales are ok i guess what should we do also budget is tight (AI often restructures and clarifies while providing solutions)</div>
+
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tip:</h3>
+        <p>Break rules strategically, not randomly. Choose which conventions to violate based on what kind of different response you want to trigger.</p>
+        
+        <button class="copy-btn" onclick="copyToClipboard('Help me with the thing about [vague description] that\\'s not working right.')">🔥 Copy Template</button>
+    </div>
+</div>
+
+<!-- ANTI-PATTERN WARNING MODAL -->
+<div class="modal" id="antiWarning">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('antiWarning')">&times;</span>
+        <h2 style="color: #ff4444; margin-bottom: 20px;">🔄 ANTI-PATTERN MASTERY LEVELS</h2>
+        
+        <h3 style="color: #ff8c00; margin: 20px 0 10px 0;">Progression Path:</h3>
+        <p><strong>Rebel:</strong> Use one anti-pattern when conventional prompting fails<br>
+        <strong>Contrarian:</strong> Combine multiple anti-patterns for complex problems<br>
+        <strong>Rule Breaker:</strong> Chain anti-patterns to completely subvert expectations<br>
+        <strong>Pattern Destroyer:</strong> Create entirely new anti-conventions that work better than the originals</p>
+        
+        <h3 style="color: #ff4444; margin: 20px 0 10px 0;">⚠️ ANTI-PATTERN WARNINGS:</h3>
+        <p>• Some rules exist for good reasons - break them thoughtfully<br>
+        • Don't anti-pattern everything - use strategically when conventional prompting fails<br>
+        • AI might occasionally take you literally when you don't want it to<br>
+        • Results can be unpredictable - embrace the chaos but have backup plans<br>
+        • Not all AIs respond the same way to rule-breaking</p>
+        
+        <h3 style="color: #ff8c00; margin: 20px 0 10px 0;">🎯 WHEN TO USE ANTI-PATTERNS:</h3>
+        <p>• Conventional prompting is giving generic results<br>
+        • You want to force AI out of safe, predictable responses<br>
+        • Standard approaches aren't working for your specific problem<br>
+        • You need creative solutions that go beyond obvious answers<br>
+        • AI is being overly cautious or verbose<br>
+        • You want to experiment with different AI response modes</p>
+    </div>
+</div>
 
     <script src="assets/js/script.js"></script>
 </body>
