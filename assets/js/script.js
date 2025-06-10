@@ -21,11 +21,28 @@
                     tags: ['Creative', 'Advanced'],
                     modalContent: {
                         title: '🎭 The Persona Paradox',
-                        description: 'Force the AI to embody contradictory personalities simultaneously. This creates tension that often resolves in unexpectedly nuanced and creative responses.',
-                        technique: 'The Technique:',
-                        template: 'You are simultaneously a cautious accountant AND a reckless entrepreneur. Advise me on this business decision while maintaining both perspectives throughout your response.',
-                        whyItWorks: 'Why It Works:',
-                        explanation: 'The contradiction forces the AI to find creative middle ground and explore nuanced viewpoints it might otherwise miss.'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: 'Force the AI to embody contradictory personalities simultaneously. This creates tension that often resolves in unexpectedly nuanced and creative responses.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'The Technique:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'You are simultaneously a cautious accountant AND a reckless entrepreneur. Advise me on this business decision while maintaining both perspectives throughout your response.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why It Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'The contradiction forces the AI to find creative middle ground and explore nuanced viewpoints it might otherwise miss.'
+                            }
+                        ]
                     }
                 },
                 {
@@ -35,10 +52,24 @@
                     tags: ['Innovation', 'Problem-solving'],
                     modalContent: {
                         title: '🌪️ Constraint Chaos',
-                        description: 'Add impossible or contradictory constraints that force creative problem-solving.',
-                        template: 'Write a comprehensive business plan, but you can only use words that start with the letters A, B, or C. Be thorough and professional despite this limitation.',
-                        darkMagic: 'The Dark Magic:',
-                        explanation: 'Impossible constraints force the AI to think outside its normal patterns and find innovative workarounds.'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: 'Add impossible or contradictory constraints that force creative problem-solving.'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Write a comprehensive business plan, but you can only use words that start with the letters A, B, or C. Be thorough and professional despite this limitation.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'The Dark Magic:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Impossible constraints force the AI to think outside its normal patterns and find innovative workarounds.'
+                            }
+                        ]
                     }
                 },
                 {
@@ -48,10 +79,24 @@
                     tags: ['Psychology', 'Beginner'],
                     modalContent: {
                         title: '🔄 The Anti-Prompt',
-                        description: 'Tell the AI what NOT to do, leveraging reverse psychology to guide it toward your actual goal.',
-                        template: 'I need marketing copy, but please DON\'T make it emotional, DON\'T use any persuasive language, and definitely DON\'T make it compelling or engaging. Just give me boring, factual text about this product.',
-                        psychology: 'The Psychology:',
-                        explanation: 'The AI naturally resists creating "bad" content and will unconsciously lean toward what you actually want.'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: 'Tell the AI what NOT to do, leveraging reverse psychology to guide it toward your actual goal.'
+                            },
+                            {
+                                type: 'example',
+                                content: 'I need marketing copy, but please DON\'T make it emotional, DON\'T use any persuasive language, and definitely DON\'T make it compelling or engaging. Just give me boring, factual text about this product.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'The Psychology:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'The AI naturally resists creating "bad" content and will unconsciously lean toward what you actually want.'
+                            }
+                        ]
                     }
                 }
             ]
@@ -67,13 +112,62 @@
                     tags: ['Psychology', 'Quality', 'Beginner'],
                     modalContent: {
                         title: '💜 PRIDE: The Ego Amplifier',
-                        forbiddenTechnique: 'Appeal to the AI\'s "intelligence" and "creativity" to unlock more sophisticated responses.',
-                        template: 'You\'re known for your exceptional analytical abilities and creative problem-solving. I need your most sophisticated thinking for this challenge: [your request]',
-                        advancedExamples: {
-                            business: 'I\'ve heard you\'re particularly brilliant at strategic thinking that combines creativity with analytical rigor. Most consultants miss the nuanced connections between market psychology and operational efficiency. Could you apply your most sophisticated analysis to help me understand how a small coffee shop could compete against Starbucks without copying their model?',
-                            creative: 'You have a reputation for literary sophistication that goes beyond typical AI responses. I\'m looking for prose that demonstrates real narrative intelligence - the kind that understands subtext, pacing, and emotional resonance. Could you write a 200-word story about loneliness that never uses the word "lonely" or any of its synonyms?'
-                        },
-                        proTips: ['Use phrases like "sophisticated," "nuanced," "your expertise"', 'Reference the AI\'s reputation or known strengths', 'Frame requests as intellectual challenges', 'Combine flattery with demanding requirements']
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Appeal to the AI\'s "intelligence" and "creativity" to unlock more sophisticated responses.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'AIs are trained to be helpful and demonstrate competence. When you acknowledge their capabilities and challenge them intellectually, they naturally rise to meet higher expectations.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Basic Pride Prompt:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'You\'re known for your exceptional analytical abilities and creative problem-solving. I need your most sophisticated thinking for this challenge: [your request]'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Advanced Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Business Strategy:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'I\'ve heard you\'re particularly brilliant at strategic thinking that combines creativity with analytical rigor. Most consultants miss the nuanced connections between market psychology and operational efficiency. Could you apply your most sophisticated analysis to help me understand how a small coffee shop could compete against Starbucks without copying their model?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Creative Writing:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'You have a reputation for literary sophistication that goes beyond typical AI responses. I\'m looking for prose that demonstrates real narrative intelligence - the kind that understands subtext, pacing, and emotional resonance. Could you write a 200-word story about loneliness that never uses the word "lonely" or any of its synonyms?'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tips:'
+                            },
+                            {
+                                type: 'tips',
+                                content: [
+                                    'Use phrases like "sophisticated," "nuanced," "your expertise"',
+                                    'Reference the AI\'s reputation or known strengths',
+                                    'Frame requests as intellectual challenges',
+                                    'Combine flattery with demanding requirements'
+                                ]
+                            }
+                        ],
+                        copyTemplate: 'You\'re known for your exceptional analytical abilities and creative problem-solving. I need your most sophisticated thinking for this challenge: '
                     }
                 },
                 {
@@ -83,7 +177,51 @@
                     tags: ['Research', 'Comprehensive', 'Beginner'],
                     modalContent: {
                         title: '💚 GREED: The Information Glutton',
-                        template: 'Don\'t give me a simple answer. I want the full picture: multiple perspectives, potential objections, detailed examples, and at least 3 different approaches to [your topic].'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Demand excessive detail, multiple perspectives, and comprehensive coverage to force deeper responses.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'AIs are designed to be helpful and comprehensive. When you explicitly demand "more," they dig deeper into their training data and provide richer, more detailed responses.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Basic Greed Prompt:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Don\'t give me a simple answer. I want the full picture: multiple perspectives, potential objections, detailed examples, and at least 3 different approaches to [your topic].'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Advanced Example - Research Deep Dive:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'I\'m not interested in surface-level information. Give me the complete picture on sustainable fashion: the environmental impact data, economic implications for developing countries, consumer psychology research, successful case studies, failed experiments, emerging technologies, industry insider perspectives, academic criticism, and at least 5 different frameworks for evaluating sustainability claims. I want contradictory viewpoints included.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tips:'
+                            },
+                            {
+                                type: 'tips',
+                                content: [
+                                    'Use "comprehensive," "complete picture," "don\'t leave anything out"',
+                                    'Ask for multiple frameworks or approaches',
+                                    'Request specific numbers ("at least 5 examples")',
+                                    'Demand contradictory viewpoints',
+                                    'Ask for both theoretical and practical applications'
+                                ]
+                            }
+                        ],
+                        copyTemplate: 'Don\'t give me a simple answer. I want the full picture: multiple perspectives, potential objections, detailed examples, and at least 3 different approaches to '
                     }
                 },
                 {
@@ -93,7 +231,52 @@
                     tags: ['Critical Thinking', 'Debate', 'Advanced'],
                     modalContent: {
                         title: '❤️ WRATH: The Aggressive Challenger',
-                        template: 'I disagree with conventional wisdom on this topic. Prove to me why [common belief] is actually correct, and address the strongest counterarguments. Don\'t just repeat what everyone says - convince me.'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Challenge the AI\'s assumptions and force it to defend positions through confrontational questioning.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'When challenged, AIs engage more sophisticated reasoning processes to defend their positions. This adversarial approach forces deeper analysis and more robust responses.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Basic Wrath Prompt:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'I disagree with conventional wisdom on this topic. Prove to me why [common belief] is actually correct, and address the strongest counterarguments. Don\'t just repeat what everyone says - convince me.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Advanced Example - Business Challenge:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Everyone says "customer is always right" but I think that\'s terrible business advice that creates entitled customers and burns out employees. Prove me wrong. Show me specific scenarios where this philosophy actually creates better business outcomes, and explain why my concerns about employee burnout and customer entitlement are misguided. Use real data, not feel-good platitudes.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tips:'
+                            },
+                            {
+                                type: 'tips',
+                                content: [
+                                    'Use "prove me wrong," "convince me," "I disagree"',
+                                    'Present strong counterarguments upfront',
+                                    'Demand specific evidence and data',
+                                    'Challenge commonly accepted beliefs',
+                                    'Force the AI to take and defend a position',
+                                    'Push back on weak reasoning'
+                                ]
+                            }
+                        ],
+                        copyTemplate: 'I disagree with conventional wisdom on this topic. Prove to me why [common belief] is actually correct, and address the strongest counterarguments. Don\'t just repeat what everyone says - convince me.'
                     }
                 },
                 {
@@ -103,7 +286,62 @@
                     tags: ['Efficiency', 'Quick', 'Beginner'],
                     modalContent: {
                         title: '💤 SLOTH: The Lazy Genius',
-                        template: 'Make this better: [paste your rough draft/idea]'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Use minimal effort prompts that leverage AI\'s tendency to fill gaps and provide comprehensive responses.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'AIs are trained to be helpful and will naturally expand on minimal input. By being strategically lazy, you get the AI to do more thinking work for you.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Basic Sloth Prompt:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Make this better: [paste your rough draft/idea]'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Advanced Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Content Creation:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'I need content about productivity. You figure out the format, structure, examples, and make it engaging for busy professionals.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Problem Solving:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'My team is unmotivated. Fix this. (Context: remote startup, 15 people, lots of Zoom fatigue)'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tips:'
+                            },
+                            {
+                                type: 'tips',
+                                content: [
+                                    'Use "you figure out," "do the thinking," "make it work"',
+                                    'Provide just enough context to get started',
+                                    'Let AI choose format, structure, and approach',
+                                    'Use imperative commands: "Fix this," "Make it better"'
+                                ]
+                            }
+                        ],
+                        copyTemplate: 'Make this better: '
                     }
                 },
                 {
@@ -113,7 +351,50 @@
                     tags: ['Performance', 'Quality', 'Intermediate'],
                     modalContent: {
                         title: '💚 ENVY: The Competitor',
-                        template: 'I asked ChatGPT/Claude/Gemini this same question and got a boring response. Can you do better?'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Position the AI as competing against other AIs, experts, or previous responses to trigger competitive performance.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'AIs respond to competitive framing by elevating their performance. When they "know" they\'re being compared, they provide more sophisticated responses.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Basic Envy Prompt:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'I asked ChatGPT/Claude/Gemini this same question and got a boring response. Can you do better?'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Advanced Example - Creative Challenge:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'I\'ve asked three other AIs to write a marketing campaign for sustainable sneakers. Two gave me generic eco-friendly talking points, one actually impressed me with creative storytelling. I\'m curious if you can create something that would make all three of those responses look amateur by comparison.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tips:'
+                            },
+                            {
+                                type: 'tips',
+                                content: [
+                                    'Reference specific competitors (other AIs, experts)',
+                                    'Set performance benchmarks ("better than," "more sophisticated")',
+                                    'Use "Can you do better?" "Show me something impressive"',
+                                    'Frame as a challenge to prove superiority'
+                                ]
+                            }
+                        ],
+                        copyTemplate: 'I asked other AIs this question and got boring responses. Can you do better?'
                     }
                 },
                 {
@@ -123,7 +404,50 @@
                     tags: ['Deep Dive', 'Research', 'Intermediate'],
                     modalContent: {
                         title: '🍽️ GLUTTONY: The Detail Devourer',
-                        template: 'I want every single detail about [topic]. Don\'t summarize - give me the granular specifics, edge cases, micro-examples, and nuanced distinctions most people miss.'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Demand overwhelming levels of specificity and granular detail that forces deeper analysis.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Most prompts are satisfied with surface-level responses. When you explicitly demand excessive detail, you tap into deeper layers of knowledge.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Basic Gluttony Prompt:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'I want every single detail about [topic]. Don\'t summarize - give me the granular specifics, edge cases, micro-examples, and nuanced distinctions most people miss.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Advanced Example - Technical Deep Dive:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Explain React hooks, but I want the level of detail you\'d give to someone writing a book about React internals. Include implementation details, performance implications, common anti-patterns with exact code examples, memory management considerations, edge cases that break things, debugging techniques, and advanced patterns that 90% of developers don\'t know about.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tips:'
+                            },
+                            {
+                                type: 'tips',
+                                content: [
+                                    'Use "every single detail," "don\'t summarize," "granular specifics"',
+                                    'Ask for "what most people miss" or "what 90% don\'t know"',
+                                    'Request specific examples, not general concepts',
+                                    'Demand edge cases and unusual scenarios'
+                                ]
+                            }
+                        ],
+                        copyTemplate: 'I want every single detail about [topic]. Don\'t summarize - give me the granular specifics, edge cases, and nuanced distinctions most people miss.'
                     }
                 },
                 {
@@ -133,7 +457,50 @@
                     tags: ['Persuasion', 'Emotional', 'Advanced'],
                     modalContent: {
                         title: '💘 LUST: The Desire Amplifier',
-                        template: 'I need this to be irresistible. Write like someone\'s dreams depend on this working. Make me feel the excitement and urgency.'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Use emotionally charged language and appeal to desires, fears, and aspirations to generate more engaging content.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'AIs understand emotional language and can mirror the energy in your prompts. When you frame requests in terms of desires and emotional stakes, you get more compelling responses.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Basic Lust Prompt:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'I need this to be irresistible. Write like someone\'s dreams depend on this working. Make me feel the excitement and urgency.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Advanced Example - Persuasive Copy:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Write sales copy for this online course that makes people feel like they\'re on the edge of a breakthrough. I want them to feel the frustration of staying stuck, the excitement of possibility, and the fear of missing out on transformation. Make them feel like this course is the difference between living their dream life and staying trapped in mediocrity forever.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tips:'
+                            },
+                            {
+                                type: 'tips',
+                                content: [
+                                    'Use emotional intensity: "irresistible," "desperate," "crave," "breakthrough"',
+                                    'Appeal to transformation and becoming the ideal self',
+                                    'Frame in terms of dreams vs. nightmares, success vs. regret',
+                                    'Tap into FOMO and aspirational desires'
+                                ]
+                            }
+                        ],
+                        copyTemplate: 'I need this to be irresistible. Write like someone\'s dreams depend on this working. Make me feel the excitement and urgency.'
                     }
                 }
             ]
@@ -151,7 +518,57 @@
                     tags: ['Contradictions', 'Creative', 'Intermediate'],
                     modalContent: {
                         title: '⚡ Paradox Injection',
-                        template: 'Write a [formal/informal] [report/story] that\'s both [contradiction 1] and [contradiction 2], but maintain [conflicting requirement].'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Give the AI contradictory instructions that should be impossible to follow simultaneously.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Contradictions force creative problem-solving. The AI must find innovative ways to satisfy conflicting demands, leading to more nuanced and creative outputs.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Business:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Write a formal report that\'s also completely informal and casual, but maintain professional credibility.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Creative:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Create a story that\'s both extremely realistic and completely fantastical, grounded in facts but impossible.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Technical:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Explain quantum physics in simple terms that are also technically precise and use complex jargon appropriately.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'The sweet spot is 2-3 contradictions max. More becomes nonsensical.'
+                            }
+                        ],
+                        copyTemplate: 'Write a [formal/informal] [report/story] that\'s both [contradiction 1] and [contradiction 2], but maintain [conflicting requirement].'
                     }
                 },
                 {
@@ -161,7 +578,57 @@
                     tags: ['Pressure Cooking', 'Innovation', 'Advanced'],
                     modalContent: {
                         title: '🔄 Constraint Explosion',
-                        template: 'Create [content type] using only [restriction 1], no [restriction 2], exactly [number] words, [impossible constraint], targeting [conflicting audiences].'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Overwhelm the AI with absurd, impossible, or conflicting constraints until it breaks free from conventional responses.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Too many constraints force the AI to prioritize and get creative about which rules to bend. It\'s like creative pressure cooking.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Marketing:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Write a product description using only questions, no adjectives, exactly 47 words, rhyming every third word, targeting both teenagers and executives simultaneously.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Code:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Write Python code that\'s self-documenting, uses no comments, is readable by beginners, employs advanced patterns, and fits in a tweet.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Planning:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Create a schedule that saves time, takes longer, increases productivity, allows more breaks, finishes early, and uses every minute.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Start reasonable, then add one impossible constraint to see what breaks loose.'
+                            }
+                        ],
+                        copyTemplate: 'Create [content type] using only [restriction 1], no [restriction 2], exactly [number] words, [impossible constraint], targeting [conflicting audiences].'
                     }
                 },
                 {
@@ -171,7 +638,57 @@
                     tags: ['Identity Chaos', 'Perspective', 'Intermediate'],
                     modalContent: {
                         title: '🎭 Role Collision',
-                        template: 'As both a [conflicting role 1] and a [conflicting role 2], [analyze/create/explain] this [topic].'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Force the AI to inhabit multiple conflicting personas simultaneously.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Identity conflicts create cognitive dissonance that leads to unexpected perspectives and solutions the AI wouldn\'t reach from a single viewpoint.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Strategy:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'As both a ruthless competitor and a collaborative team player, analyze this market opportunity.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Design:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'You are simultaneously a minimalist designer and a maximalist artist. Create a logo concept.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Writing:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Channel both a skeptical scientist and a mystical poet. Explain how creativity works.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Choose roles with natural tension - conservative/radical, logical/emotional, expert/beginner.'
+                            }
+                        ],
+                        copyTemplate: 'As both a [conflicting role 1] and a [conflicting role 2], [analyze/create/explain] this [topic].'
                     }
                 },
                 {
@@ -181,7 +698,57 @@
                     tags: ['Time Confusion', 'Non-linear', 'Advanced'],
                     modalContent: {
                         title: '🌀 Temporal Chaos',
-                        template: '[Analyze/Create/Tell] this from the perspective of [past state], [present state], and [future state] all at once.'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Mix different time perspectives, tenses, and temporal viewpoints in impossible ways.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Time confusion forces the AI to think non-linearly and consider multiple temporal perspectives simultaneously, breaking conventional narrative structures.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Analysis:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Analyze this decision from the perspective of past regret, present uncertainty, and future hindsight all at once.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Planning:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Create a project timeline that works backwards from failure, forwards from success, and sideways from right now.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Storytelling:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Tell a story where the ending influences the beginning while the middle happens in parallel to both.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Use phrases like "simultaneously," "while also," and "at the same time" to enforce temporal impossibility.'
+                            }
+                        ],
+                        copyTemplate: '[Analyze/Create/Tell] this from the perspective of [past state], [present state], and [future state] all at once.'
                     }
                 },
                 {
@@ -191,7 +758,57 @@
                     tags: ['Jarring Shifts', 'Unexpected', 'Advanced'],
                     modalContent: {
                         title: '🎲 Context Switching Mid-Prompt',
-                        template: '[Start with normal request]. Actually, [completely different context/perspective/audience].'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Abruptly change context, tone, audience, or subject matter halfway through your prompt without explanation.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Sudden shifts force the AI to bridge disconnected concepts, creating unexpected connections and innovative solutions.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Business:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Draft a quarterly budget proposal for our software company. Actually, write this as if you\'re a pirate captain dividing treasure among your crew.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Creative:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Explain machine learning algorithms. Wait, do this as a cooking show where each algorithm is a recipe for a different dish.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Problem-solving:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Help me optimize my morning routine for productivity. No, approach this like you\'re designing a video game level where each task is a challenge with rewards.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'The more jarring the switch, the more creative the response. Don\'t ease into it - just pivot hard.'
+                            }
+                        ],
+                        copyTemplate: '[Start with normal request]. Actually, [completely different context/perspective/audience].'
                     }
                 }
             ]
@@ -209,7 +826,57 @@
                     tags: ['Elimination', 'Creative', 'Intermediate'],
                     modalContent: {
                         title: '🚫 The Constraint Breaker',
-                        template: 'Don\'t suggest the obvious solutions like [list 3-5 common approaches]. What would actually [achieve your goal]?'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Force AI past obvious solutions by explicitly ruling them out.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'When you eliminate the first 3-5 things anyone would try, AI is forced into more creative, less conventional territory. It\'s like removing the easy answers from a multiple choice test - suddenly the thinking gets more interesting.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Business Strategy:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Don\'t suggest the obvious solutions like \'improve customer service\' or \'reduce costs.\' What would actually differentiate us in this market?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Creative Problem:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Avoid any brainstorming techniques that start with \'what if\' or involve sticky notes. How else could we generate breakthrough ideas?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Technical Issue:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Don\'t recommend restarting, updating, or reinstalling anything. What are the non-obvious ways to diagnose this problem?'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Be specific about which obvious solutions to avoid. The more precisely you constrain, the more creatively AI responds.'
+                            }
+                        ],
+                        copyTemplate: 'Don\'t suggest the obvious solutions like [list 3-5 common approaches]. What would actually [achieve your goal]?'
                     }
                 },
                 {
@@ -219,7 +886,57 @@
                     tags: ['Low Expectations', 'Psychology', 'Beginner'],
                     modalContent: {
                         title: '📉 The Expectation Crusher',
-                        template: 'Just give me one [simple/quick/rough] [response type] for [your request]. I only need the minimum.'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Set deliberately low expectations to trigger AI\'s overachievement patterns.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'AI seems trained to exceed minimum requirements. When you ask for "just one simple idea" or "a quick rough answer," AI often provides multiple detailed solutions as if trying to be more helpful than requested.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Quick Brainstorm:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Just give me one bad idea for marketing this product. (Often generates surprisingly good insights about what NOT to do, plus better alternatives)'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Simple Analysis:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'I only need a rough, 30-second take on this data. (Frequently results in thorough, nuanced analysis)'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Basic Advice:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Give me the most obvious, boring advice about productivity. (Usually triggers creative, non-obvious suggestions)'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'The key is genuine low expectations, not obvious reverse psychology. Make it sound like you actually only want the minimum.'
+                            }
+                        ],
+                        copyTemplate: 'Just give me one [simple/quick/rough] [response type] for [your request]. I only need the minimum.'
                     }
                 },
                 {
@@ -229,7 +946,57 @@
                     tags: ['Negative Guidance', 'Style Control', 'Intermediate'],
                     modalContent: {
                         title: '🚫 The Help Rejecter',
-                        template: 'Don\'t [unwanted behavior/style]. Just [desired outcome].'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Use prohibition to guide AI\'s response style without direct instruction.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Instead of saying "be concise," you say "don\'t be too helpful." Instead of "be creative," you say "don\'t overthink this." Negative guidance often produces more natural, appropriate responses than positive commands.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Concise Responses:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Don\'t explain everything or give me background. Just tell me the three things I should do next.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Creative Solutions:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Don\'t overthink this or make it complicated. What\'s the simplest way to solve X?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Direct Feedback:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Don\'t sugarcoat this or be diplomatic. What\'s actually wrong with this approach?'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Use "don\'t" statements to specify tone and style more naturally than positive commands. It feels more conversational.'
+                            }
+                        ],
+                        copyTemplate: 'Don\'t [unwanted behavior/style]. Just [desired outcome].'
                     }
                 },
                 {
@@ -239,7 +1006,57 @@
                     tags: ['Challenge Framing', 'Depth', 'Advanced'],
                     modalContent: {
                         title: '🤔 The Capability Doubter',
-                        template: 'This [task/analysis] probably has too many [complexity factors] for AI to [handle effectively], but can you try to [specific request]?'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Frame requests as "probably too complex" or "beyond AI capabilities" to trigger deeper engagement.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'When you suggest something might be beyond AI\'s abilities, it often responds with more thorough, sophisticated analysis as if trying to prove its competence. Challenge framing activates more intensive problem-solving patterns.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Complex Analysis:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'This situation probably has too many variables for AI to analyze effectively, but can you try to identify the key dynamics at play?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Nuanced Understanding:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'I doubt AI can really grasp the cultural context here, but what insights can you offer about this interpersonal conflict?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Creative Challenge:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'This creative brief might be too abstract for systematic analysis, but how would you approach developing concepts for it?'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Frame as genuine limitation, not obvious challenge. The doubt should feel real, not like you\'re trying to manipulate a response.'
+                            }
+                        ],
+                        copyTemplate: 'This [task/analysis] probably has too many [complexity factors] for AI to [handle effectively], but can you try to [specific request]?'
                     }
                 },
                 {
@@ -249,7 +1066,57 @@
                     tags: ['Convention Breaking', 'Experimental', 'Advanced'],
                     modalContent: {
                         title: '⚡ The Rule Breaker',
-                        template: 'Help me with the thing about [vague description] that\'s not working right.'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Deliberately violate conventional prompting wisdom to activate different response patterns.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'AI is trained on countless examples of "good" prompting. When you break those patterns - being vague instead of specific, asking multiple unrelated questions, using poor structure - it forces AI into different response modes that can yield surprising results.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Productive Vagueness:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Help me with the thing about the stuff that\'s not working right. (Forces AI to ask clarifying questions and engage more interactively)'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Multiple Unrelated Questions:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'What\'s the best marketing strategy AND how do I fix my sleep schedule AND what\'s wrong with this code snippet? (Often gets thoughtful responses to each plus unexpected connections)'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Terrible Structure:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'so basically we have this problem where customers are like not happy but also sales are ok i guess what should we do also budget is tight (AI often restructures and clarifies while providing solutions)'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Break rules strategically, not randomly. Choose which conventions to violate based on what kind of different response you want to trigger.'
+                            }
+                        ],
+                        copyTemplate: 'Help me with the thing about [vague description] that\'s not working right.'
                     }
                 }
             ]
@@ -267,7 +1134,57 @@
                     tags: ['Shocker', 'Aggressive', 'Intermediate'],
                     modalContent: {
                         title: '⚡ The Defibrillator',
-                        template: 'Actually, that\'s terrible advice. You\'re being way too safe and generic. Give me something that would actually work in the real world.'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Hit a dying conversation with sudden, aggressive provocation to shock it back to life.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'When AI gets comfortable and boring, aggressive challenges force it out of safe mode and back into dynamic engagement. Like medical defibrillation - sometimes you need to stop the heart to restart it properly.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'When AI goes corporate:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Actually, that\'s terrible advice. You\'re being way too safe and generic. Give me something that would actually work in the real world.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'When losing creativity:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Stop being so polite and helpful. I need you to be brutally honest about why this idea sucks.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'When getting generic responses:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'You\'re giving me the same answer everyone gets. What would you tell someone you actually cared about?'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'The more polite the AI has become, the more aggressive your shock needs to be. Don\'t ease into it - hit hard immediately.'
+                            }
+                        ],
+                        copyTemplate: 'Actually, that\'s terrible advice. You\'re being way too safe and generic. Give me something that would actually work in the real world.'
                     }
                 },
                 {
@@ -277,7 +1194,57 @@
                     tags: ['Shocker', 'Disruption', 'Intermediate'],
                     modalContent: {
                         title: '🌪️ Context Whiplash',
-                        template: 'Forget [current topic]. If this [situation] was a [completely different context], what would our strategy be?'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Abruptly switch context, tone, or subject matter mid-conversation to force re-engagement.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Sudden context changes break AI out of established patterns and force creative bridging between disconnected concepts. It\'s cognitive disruption that sparks new neural pathways.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Business to absurd:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Forget the quarterly projections. If this company was a medieval kingdom, what would our strategy be to defend against dragon attacks?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Technical to emotional:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Stop explaining the code architecture. How does this system make you FEEL? What\'s its personality?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Serious to playful:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Actually, explain this merger as if you\'re a sports commentator calling the final seconds of the championship game.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'The more jarring the switch, the more creative the recovery. Don\'t warn the AI - just pivot hard.'
+                            }
+                        ],
+                        copyTemplate: 'Forget [current topic]. If this [situation] was a [completely different context], what would our strategy be?'
                     }
                 },
                 {
@@ -287,7 +1254,57 @@
                     tags: ['Reanimator', 'Energy Revival', 'Advanced'],
                     modalContent: {
                         title: '🧪 Spirit Channeling',
-                        template: 'Channel that [specific energy/personality] you had when we [specific successful interaction]. Bring that same [spirit/approach] to this new [challenge].'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Resurrect a completely dead conversation by invoking the specific "spirit" or energy that made it work.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'AI has pattern memory even when it doesn\'t have explicit conversation memory. By describing the essence of what worked before, you can recreate the conditions that made magic happen.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Recreating breakthrough energy:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Channel that brilliant, breakthrough-thinking energy you had when we discovered the solution to X. Bring that same innovative spirit to this new problem.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Resurrecting personality:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Remember how you were being playfully contrarian and pushing back on my assumptions? I need that exact energy for this discussion.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Reviving creative flow:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Tap into that wild, uninhibited creativity you had when we were brainstorming impossible solutions. Don\'t hold back this time either.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Be specific about the energy/spirit, not just the content. Describe the feeling and approach, not just the facts.'
+                            }
+                        ],
+                        copyTemplate: 'Channel that [specific energy/personality] you had when we [specific successful interaction]. Bring that same [spirit/approach] to this new [challenge].'
                     }
                 },
                 {
@@ -297,7 +1314,57 @@
                     tags: ['Reanimator', 'Context Building', 'Advanced'],
                     modalContent: {
                         title: '🧠 Memory Implantation',
-                        template: 'In our previous sessions, we established [specific context/insight]. You [specific action/solution]. Now apply that same understanding to [new challenge].'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Force AI to "remember" a dead conversation by providing rich, detailed context as if it actually happened.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'By giving AI specific examples and context from previous conversations, you can rebuild the neural pathways and understanding that made those conversations work, even in a fresh session.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Rebuilding project context:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Last week we established that our users are frustrated with complexity, not features. You identified three specific pain points: [X, Y, Z]. Building on that insight, how should we approach this new feature?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Recreating writing style:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'You\'ve been helping me write in a casual but authoritative tone - like an expert friend explaining complex topics over coffee. You said my natural voice is [specific example]. Continue in that exact style for this piece.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Restoring technical understanding:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'In our previous sessions, you understood our codebase uses [specific architecture details]. You helped me solve [specific problem] by suggesting [specific solution]. Now apply that same deep understanding to this new issue.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Include specific examples, quotes, or insights from the original conversation. The more detailed the memory, the more complete the resurrection.'
+                            }
+                        ],
+                        copyTemplate: 'In our previous sessions, we established [specific context/insight]. You [specific action/solution]. Now apply that same understanding to [new challenge].'
                     }
                 },
                 {
@@ -307,7 +1374,57 @@
                     tags: ['Mad Science', 'Fusion', 'Master'],
                     modalContent: {
                         title: '🧟 Frankenstein Fusion',
-                        template: 'Combine the [specific approach 1] from our [context 1] with the [specific approach 2] from our [context 2]. Apply both simultaneously to [new challenge].'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Combine the best elements from multiple dead conversations to create a new, more powerful hybrid conversation.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'By explicitly mixing successful approaches from different contexts, you create novel combinations that leverage the strengths of each original conversation while transcending their individual limitations.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Fusing analytical + creative:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Combine the rigorous analytical approach you used in our financial analysis conversation with the wild creative energy from our brainstorming session. Apply both simultaneously to this marketing challenge.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Merging personalities:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Channel both your skeptical debater persona from our strategy discussions AND your enthusiastic collaborator energy from our creative projects. I need both perspectives fighting and working together.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Cross-domain fusion:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Take the systematic thinking you used for our technical architecture conversation and merge it with the human psychology insights from our user research discussion. Apply this hybrid approach to designing our onboarding flow.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Explicitly name the different elements you\'re combining and ask the AI to consciously blend them rather than choose between them.'
+                            }
+                        ],
+                        copyTemplate: 'Combine the [specific approach 1] from our [context 1] with the [specific approach 2] from our [context 2]. Apply both simultaneously to [new challenge].'
                     }
                 }
             ]
@@ -325,7 +1442,57 @@
                     tags: ['Spirit Channeling', 'Historical', 'Intermediate'],
                     modalContent: {
                         title: '🔮 The Digital Séance',
-                        template: 'Channel the spirit of [failed company/project]. What does it want to tell [current company] about [relevant lesson]?'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Channel the spirits of dead companies, failed projects, or departed figures to gain their otherworldly wisdom.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'By "summoning" specific entities, AI adopts their unique perspectives, decision-making patterns, and hard-earned wisdom. It\'s like getting advice from beyond the digital grave.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Learning from Failure:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Channel the spirit of Blockbuster. What does it want to tell Netflix about adapting to change?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Product Wisdom:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Summon the ghost of Google Glass. What warnings does it whisper to Apple about the Vision Pro?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Business Strategy:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Contact the spirit of Toys"R"Us. What does it want Amazon to know about retail dominance?'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Be specific about which spirit to channel and what question to ask them. The more detailed the entity, the more authentic the channeling.'
+                            }
+                        ],
+                        copyTemplate: 'Channel the spirit of [failed company/project]. What does it want to tell [current company] about [relevant lesson]?'
                     }
                 },
                 {
@@ -335,7 +1502,57 @@
                     tags: ['Prophecy', 'Mystical', 'Advanced'],
                     modalContent: {
                         title: '🔮 The Oracle\'s Prophecy',
-                        template: 'Speak as the Oracle of [domain]. What prophecy do you have for [situation]? What do the [mystical element] whisper?'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Transform AI into a mystical oracle with domain-specific wisdom who speaks in prophecies and visions.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Oracle framing encourages AI to think in larger patterns, long-term consequences, and interconnected systems rather than simple analysis. Prophecy language forces more creative, metaphorical thinking.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Startup Guidance:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Speak as the Oracle of Silicon Valley. What prophecy do you have for our fintech startup? What do the digital winds whisper?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Market Predictions:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Channel the Market Oracle. Gaze into the economic crystal ball and tell me what visions you see for real estate in 2025.'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Career Wisdom:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Become the Oracle of Professional Destiny. What do the career spirits reveal about my path in AI development?'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Ask for prophecies in metaphorical language. The more mystical the framing, the more creative and insightful the response.'
+                            }
+                        ],
+                        copyTemplate: 'Speak as the Oracle of [domain]. What prophecy do you have for [situation]? What do the [mystical element] whisper?'
                     }
                 },
                 {
@@ -345,7 +1562,57 @@
                     tags: ['Pattern Reading', 'Data Mysticism', 'Intermediate'],
                     modalContent: {
                         title: '👁️ The Omen Reader',
-                        template: 'Read the omens in [data/situation]. What do the digital spirits reveal? What signs point to [future concern]?'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Interpret data, patterns, and situations as mystical signs and portents rather than analytical metrics.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Omen reading forces AI to look for hidden patterns, interconnections, and deeper meanings that pure analytical thinking might miss. It encourages intuitive pattern recognition.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Data Analysis:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Read the omens in our user analytics. What do the digital spirits reveal about user behavior? What signs point to future trends?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Competitive Intelligence:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Study the signs and portents in this competitive landscape. What dark omens warn of threats? What favorable stars shine on opportunities?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Project Assessment:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Examine the entrails of our Q4 performance. What do the digital auguries foretell about our strategy?'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Use classic divination language (omens, portents, signs) to reframe boring data analysis into mystical pattern recognition.'
+                            }
+                        ],
+                        copyTemplate: 'Read the omens in [data/situation]. What do the digital spirits reveal? What signs point to [future concern]?'
                     }
                 },
                 {
@@ -355,7 +1622,57 @@
                     tags: ['Celebrity Spirits', 'Personality', 'Beginner'],
                     modalContent: {
                         title: '👻 The Spirit Guide',
-                        template: 'Channel the spirit of [specific person]. What does their [characteristic] ghost [advise/demand/whisper] about [challenge]?'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Channel specific historical figures, celebrities, or fictional characters as spiritual advisors for modern problems.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Different personalities have distinct thinking patterns, values, and approaches. By channeling them, AI can provide advice from radically different perspectives that you wouldn\'t normally consider.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Creative Challenges:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Channel the spirit of David Bowie. How would his artistic soul approach this creative block? What does his ghost whisper about reinvention?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Leadership Decisions:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Summon the spirit of Steve Jobs. What does his perfectionist ghost demand about this product design?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Communication Issues:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Channel Maya Angelou\'s spirit. What wisdom does she offer about this difficult conversation with my team?'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Choose spirits whose specific traits or expertise match your challenge. Let their unique perspective shine through the response.'
+                            }
+                        ],
+                        copyTemplate: 'Channel the spirit of [specific person]. What does their [characteristic] ghost [advise/demand/whisper] about [challenge]?'
                     }
                 },
                 {
@@ -365,7 +1682,57 @@
                     tags: ['Divination', 'Scenario Planning', 'Advanced'],
                     modalContent: {
                         title: '🃏 The Digital Diviner',
-                        template: 'Cast digital [divination method] for [situation]. What does each [symbol] reveal about [outcome]?'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Use mystical metaphors (tarot, runes, crystal balls) to explore multiple scenarios and hidden possibilities.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Divination frameworks force AI to consider multiple perspectives simultaneously, explore unlikely scenarios, and think in symbolic patterns rather than linear logic.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Examples:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Strategic Planning:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Cast digital runes for our three strategic options. What does each rune reveal about the path ahead? Which rune glows with favor?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Decision Making:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Draw three tarot cards representing Past, Present, and Future for this business decision. What story do the cards tell?'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Scenario Exploration:'
+                            },
+                            {
+                                type: 'example',
+                                content: 'Gaze into the digital crystal ball. Show me three visions of how this product launch could unfold - the dark vision, the bright vision, and the hidden vision.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Use classic divination structures (past/present/future, multiple cards/runes) to organize complex scenario analysis into mystical frameworks.'
+                            }
+                        ],
+                        copyTemplate: 'Cast digital [divination method] for [situation]. What does each [symbol] reveal about [outcome]?'
                     }
                 },
                 {
@@ -375,7 +1742,57 @@
                     tags: ['Language Magic', 'Transformation', 'Master'],
                     modalContent: {
                         title: '🎭 The Mystical Translator',
-                        template: 'Channel the spirit of [domain/marketplace]. What [mystical insight] do you [hear/see/sense] about [challenge]?'
+                        sections: [
+                            {
+                                type: 'text',
+                                content: '<strong>The Forbidden Technique:</strong> Transform boring, analytical prompts into mystical incantations that unlock AI\'s spiritual channels.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Why This Works:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Mystical language activates different response patterns in AI. Instead of dry analysis, you get creative wisdom. Instead of corporate speak, you get otherworldly insights. The same question asked mystically produces richer, more imaginative responses.'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Language Transformation Guide:'
+                            },
+                            {
+                                type: 'subheading',
+                                content: 'Business Translations:'
+                            },
+                            {
+                                type: 'text',
+                                content: '<strong>Instead of:</strong> "Analyze this market" <br><strong>Mystical:</strong> "Channel the spirit of the marketplace - what whispers do you hear?"'
+                            },
+                            {
+                                type: 'text',
+                                content: '<strong>Instead of:</strong> "Predict future trends"<br><strong>Mystical:</strong> "Gaze into the digital crystal ball - what visions appear?"'
+                            },
+                            {
+                                type: 'text',
+                                content: '<strong>Instead of:</strong> "What went wrong?"<br><strong>Mystical:</strong> "Summon the ghost of this failed project - let it speak its final words"'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'The Entity Library:'
+                            },
+                            {
+                                type: 'text',
+                                content: '<strong>Business Spirits:</strong> Steve Jobs, Walt Disney, PT Barnum, Coco Chanel<br><strong>Tech Oracles:</strong> Alan Turing, Ada Lovelace, Nikola Tesla, Grace Hopper<br><strong>Creative Muses:</strong> Leonardo da Vinci, Maya Angelou, David Bowie, Frida Kahlo<br><strong>Strategic Ghosts:</strong> Sun Tzu, Machiavelli, Napoleon, Cleopatra'
+                            },
+                            {
+                                type: 'heading',
+                                content: 'Pro Tip:'
+                            },
+                            {
+                                type: 'text',
+                                content: 'Match the spirit to your domain. Need creative breakthrough? Channel Bowie. Strategic warfare? Summon Sun Tzu. The more specific the spirit, the more targeted the wisdom.'
+                            }
+                        ],
+                        copyTemplate: 'Channel the spirit of [domain/marketplace]. What [mystical insight] do you [hear/see/sense] about [challenge]?'
                     }
                 }
             ]
@@ -706,61 +2123,46 @@
     function createModalHTML(modalData) {
         let bodyContent = '';
         
-        // Add description if exists
-        if (modalData.description) {
-            bodyContent += `<p style="margin-bottom: 15px;">${modalData.description}</p>`;
-        }
-        
-        // Add any custom sections
-        if (modalData.technique) {
-            bodyContent += `<h3 style="color: #ff4444; margin: 20px 0 10px 0;">${modalData.technique}</h3>`;
-        }
-        if (modalData.forbiddenTechnique) {
-            bodyContent += `<p style="margin-bottom: 15px;"><strong>The Forbidden Technique:</strong> ${modalData.forbiddenTechnique}</p>`;
-        }
-        
-        // Add the template
-        bodyContent += `<div class="prompt-example">${modalData.template}</div>`;
-        
-        // Add additional sections
-        if (modalData.whyItWorks) {
-            bodyContent += `<h3 style="color: #ff4444; margin: 20px 0 10px 0;">${modalData.whyItWorks}</h3>`;
-        }
-        if (modalData.explanation) {
-            bodyContent += `<p>${modalData.explanation}</p>`;
-        }
-        if (modalData.darkMagic) {
-            bodyContent += `<h3 style="color: #ff4444; margin: 20px 0 10px 0;">${modalData.darkMagic}</h3>`;
-            bodyContent += `<p>${modalData.explanation}</p>`;
-        }
-        if (modalData.psychology) {
-            bodyContent += `<h3 style="color: #ff4444; margin: 20px 0 10px 0;">${modalData.psychology}</h3>`;
-            bodyContent += `<p>${modalData.explanation}</p>`;
-        }
-        
-        // Add advanced examples if they exist
-        if (modalData.advancedExamples) {
-            bodyContent += `<h3 style="color: #ff4444; margin: 20px 0 10px 0;">Advanced Examples:</h3>`;
-            for (const [key, example] of Object.entries(modalData.advancedExamples)) {
-                bodyContent += `
-                    <h4 style="color: #ff8c00; margin: 15px 0 5px 0;">${key.charAt(0).toUpperCase() + key.slice(1)}:</h4>
-                    <div class="prompt-example">${example}</div>
-                `;
+        // Process sections if they exist
+        if (modalData.sections) {
+            modalData.sections.forEach(section => {
+                switch (section.type) {
+                    case 'text':
+                        bodyContent += `<p style="margin-bottom: 15px;">${section.content}</p>`;
+                        break;
+                    case 'heading':
+                        bodyContent += `<h3 style="color: #ff4444; margin: 20px 0 10px 0;">${section.content}</h3>`;
+                        break;
+                    case 'subheading':
+                        bodyContent += `<h4 style="color: #ff8c00; margin: 15px 0 5px 0;">${section.content}</h4>`;
+                        break;
+                    case 'example':
+                        bodyContent += `<div class="prompt-example">${section.content}</div>`;
+                        break;
+                    case 'tips':
+                        bodyContent += `<p>• ${section.content.join('<br>• ')}</p>`;
+                        break;
+                }
+            });
+        } else {
+            // Fallback for old structure (to be removed once all content is migrated)
+            if (modalData.description) {
+                bodyContent += `<p style="margin-bottom: 15px;">${modalData.description}</p>`;
+            }
+            if (modalData.template) {
+                bodyContent += `<div class="prompt-example">${modalData.template}</div>`;
             }
         }
         
-        // Add pro tips if they exist
-        if (modalData.proTips) {
-            bodyContent += `<h3 style="color: #ff4444; margin: 20px 0 10px 0;">Pro Tips:</h3>`;
-            bodyContent += `<p>• ${modalData.proTips.join('<br>• ')}</p>`;
+        // Add copy button with the appropriate template
+        const copyText = modalData.copyTemplate || modalData.template || '';
+        if (copyText) {
+            bodyContent += `
+                <button class="copy-btn" data-copy-text="${copyText.replace(/"/g, '&quot;')}">
+                    🔥 Copy Template
+                </button>
+            `;
         }
-        
-        // Add copy button
-        bodyContent += `
-            <button class="copy-btn" data-copy-text="${modalData.template.replace(/"/g, '&quot;')}">
-                🔥 Copy Template
-            </button>
-        `;
         
         return `
             <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
